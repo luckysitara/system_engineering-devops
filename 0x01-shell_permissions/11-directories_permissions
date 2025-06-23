@@ -1,2 +1,9 @@
 #!/bin/bash
-find . -maxdepth 1 -type d ! -name "." -exec chmod a+x {} \;
+
+for item in * 
+do
+  if [ -d "$item" ]
+  then
+    chmod a+x "$item"
+  fi
+done
