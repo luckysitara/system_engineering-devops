@@ -1,2 +1,2 @@
 #!/bin/bash
-head 5 iacta
+nl iacta | while read -r _ line; do echo "$line" | cut -d' ' -f1; done
