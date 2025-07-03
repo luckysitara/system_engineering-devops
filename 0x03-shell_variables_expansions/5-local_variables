@@ -1,0 +1,3 @@
+#!/bin/bash
+declare -p  # Lists all variables (local + env)
+declare -f
