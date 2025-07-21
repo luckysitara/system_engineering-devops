@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Stop the 7-highlander process without using kill or killall
+pid=$(pgrep -f "7-highlander")
+if [ -n "$pid" ]; then
+    pkill -f "7-highlander"
+fi
